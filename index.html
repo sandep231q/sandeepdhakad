@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitabe Hindi Me</title>
+ <style>   /* Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    /* Navigation Bar */
+    .navbar {
+        background-color: #000;
+        color: #fff;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: yellow;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin-left: 20px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    
+    .nav-links a:hover {
+        color: yellow;
+    }
+    
+    /* Books Section */
+    .books-section {
+        padding: 50px;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .books-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+    
+    .book-item {
+        width: 30%;
+        margin: 5px;
+        position: relative;
+    }
+    
+    .book-item img {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .book-item:hover img {
+        transform: scale(1.05);
+    }
+    
+    .book-item p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    /* Our Team Section */
+    .team-section {
+        padding: 50px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    
+    .team-section h2 {
+        color: yellow;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+        padding: 50px;
+        text-align: center;
+        background-color: yellow;
+        color: black;
+    }
+    
+    .contact-section h2 {
+        color: black;
+    }
+    .course-item {
+  margin-bottom: 20px; /* Each course item will have some space below it */
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+  grid-gap: 20px; /* Space between grid items */
+}
+
+.course-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 10px; /* Space between the button and the details */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Kitabe Hindi Me</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Books Section -->
+    <section id="books" class="books-section">
+        <h2 color="yellow">Our Collection</h2>
+        <div class="books-grid">
+            <div class="book-item">
+            <a href="https://photos.fife.usercontent.google.com/pw/AP1GczNgEAyQ3rHDkOrAGj8YKD3UUAoulVCwlCEnNIj12G8k9EtK3vN3Zrdx=w1003-h991-s-no-gm?authuser=0" target="_blank"> 
+                <img src="https://cdn.plainconcepts.com/wp-content/uploads/2024/01/github-pages.jpg" style="border-radius: 15px;"></a> 
+                   </a>
+            </div>
+            <div class="book-item">
+
+                <img src="https://cdn.plainconcepts.com/wp-content/uploads/2024/01/github-pages.jpg" style="border-radius: 15px;">                
+            </div>
+            <div class="book-item">
+                <img src="https://cdn.plainconcepts.com/wp-content/uploads/2024/01/github-pages.jpg" style="border-radius: 15px;"></a> 
+              
+            </div>
+            <div class="book-item">
+                <img src="https://cdn.plainconcepts.com/wp-content/uploads/2024/01/github-pages.jpg" style="border-radius: 15px;"></a> 
+              
+            </div> <div class="book-item">
+                <img src="https://cdn.plainconcepts.com/wp-content/uploads/2024/01/github-pages.jpg" style="border-radius: 15px;"></a> 
+              
+            </div> <div class="book-item">
+                <img src="https://cdn.plainconcepts.com/wp-content/uploads/2024/01/github-pages.jpg" style="border-radius: 15px;"></a> 
+              
+            </div> <div class="book-item">
+                <img src="https://cdn.plainconcepts.com/wp-content/uploads/2024/01/github-pages.jpg" style="border-radius: 15px;"></a> 
+              
+            </div>
+        </div>
+        <div class="course">
+            <h3>OUR COURSES</h3>
+          
+            <div class="course-grid">
+              <div class="course-item">
+                <p><i>1. CPCT</i></p>
+                <p id="details1" class="hidden">hyy my name is sandeep dhakad</p>
+                <button id="toggle-button1">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>2. MS Office</i></p>
+                <p id="details2" class="hidden">MS Office ke liye yahaan details hain.</p>
+                <button id="toggle-button2">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>3. Tally</i></p>
+                <p id="details3" class="hidden">Tally ke liye yahaan details hain.</p>
+                <button id="toggle-button3">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>4. Web Designing</i></p>
+                <p id="details4" class="hidden">Web Designing ke liye yahaan details hain.</p>
+                <button id="toggle-button4">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>5. Graphic Designing</i></p>
+                <p id="details5" class="hidden">Graphic Designing ke liye yahaan details hain.</p>
+                <button id="toggle-button5">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>6. Data Entry</i></p>
+                <p id="details6" class="hidden">Data Entry ke liye yahaan details hain.</p>
+                <button id="toggle-button6">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>7. Networking</i></p>
+                <p id="details7" class="hidden">Networking ke liye yahaan details hain.</p>
+                <button id="toggle-button7">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>8. Cyber Security</i></p>
+                <p id="details8" class="hidden">Cyber Security ke liye yahaan details hain.</p>
+                <button id="toggle-button8">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>9. Programming (C, C++, Python)</i></p>
+                <p id="details9" class="hidden">Programming ke liye yahaan details hain.</p>
+                <button id="toggle-button9">Show Details</button>
+              </div>
+          
+              <div class="course-item">
+                <p><i>10. Database Management</i></p>
+                <p id="details10" class="hidden">Database Management ke liye yahaan details hain.</p>
+                <button id="toggle-button10">Show Details</button>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          
+         
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="team-section">
+        <h2>Our Team</h2>
+        <p>We are a simple team dedicated to providing Hindi books.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for more information!</p>
+    </section>
+
+    <script>
+    // You can add any interactivity here if required in the future
+   // Function to toggle visibility of details for each course
+function toggleDetails(buttonId, detailsId) {
+  const details = document.getElementById(detailsId);
+  const button = document.getElementById(buttonId);
+
+  button.addEventListener('click', function() {
+    if (details.classList.contains('hidden')) {
+      details.classList.remove('hidden');
+      button.textContent = "Hide Details";
+    } else {
+      details.classList.add('hidden');
+      button.textContent = "Show Details";
+    }
+  });
+}
+
+// Call the function for each course
+toggleDetails('toggle-button1', 'details1');
+toggleDetails('toggle-button2', 'details2');
+toggleDetails('toggle-button3', 'details3');
+toggleDetails('toggle-button4', 'details4');
+toggleDetails('toggle-button5', 'details5');
+toggleDetails('toggle-button6', 'details6');
+toggleDetails('toggle-button7', 'details7');
+toggleDetails('toggle-button8', 'details8');
+toggleDetails('toggle-button9', 'details9');
+toggleDetails('toggle-button10', 'details10');
+
+
+
+    </script>
+</body>
+</html>
